@@ -1,16 +1,62 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" dir="ltr">
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="theme-color" content="#556cd6" />
+
+  <!-- Основные SEO-метатеги -->
+  <title>FunPayLike - Безопасная биржа игровых предметов | Купить/продать скины, аккаунты</title>
+  <meta name="description"
+    content="Биржа игровых предметов для безопасных сделок. Покупайте и продавайте скины, аккаунты, внутриигровую валюту с гарантией сделки.">
+  <meta name="keywords"
+    content="игровые предметы, купить скины, продать аккаунт, биржа игровых вещей, безопасные сделки">
+
+  <!-- OpenGraph / Социальные сети -->
+  <meta property="og:title" content="FunPayLike - Безопасная биржа игровых предметов">
+  <meta property="og:description"
+    content="Покупайте и продавайте скины, аккаунты, внутриигровую валюту с гарантией сделки.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:image" content="https://yourdomain.com/preview.jpg">
+  <meta property="og:locale" content="ru_RU">
+
+  <!-- Favicon и манифест -->
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FunPayLike</title>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Каноническая ссылка -->
+  <link rel="canonical" href="https://yourdomain.com" />
+
+  <!-- Предзагрузка критических ресурсов -->
+  <link rel="preload" href="/src/main.tsx" as="script">
+  <link rel="preconnect" href="https://api.yourdomain.com">
 </head>
 
 <body>
   <div id="root"></div>
+  <noscript>
+    <h1>FunPayLike - Биржа игровых предметов</h1>
+    <p>Для работы приложения требуется JavaScript. Пожалуйста, включите его в настройках браузера.</p>
+  </noscript>
   <script type="module" src="/src/main.tsx"></script>
+
+  <!-- Schema.org разметка -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "FunPayLike",
+      "url": "https://yourdomain.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://yourdomain.com/items?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
 </body>
 
 </html>
