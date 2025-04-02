@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+
+# Node
+node_modules/
+dist/
+
+# Vite
+frontend/dist/
+
+# Docker
+*.log
+*.pid
+*.sqlite3
+
+# VSCode
+.vscode/
+
+# IDE
+.idea/
+back/.idea/
